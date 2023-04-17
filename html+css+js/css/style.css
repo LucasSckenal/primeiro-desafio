@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Light */
+  --light-background-color: ##faf8f5;
+  --light-background-color-2: #ffffff;
+  --light-color: #ffffff;
+
+  /* Dark */
+  --dark-color: #060809;
+  --dark-color-button: #0f0f14;
+  --color-dark-title: #000;
+  --color-dark-nav-home: #1b1c20;
+  --dark-color-button-2: #000;
+  --color-dark-text: #1b1c20;
+
+  /* outras cores */
+  --purple-title: #712fff;
+  --purple-text: #6941c6;
+  --gray-text: #797b89;
+}
+@media screen and (min-width: 320px) {
+  .topbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    background-color: transparent;
+    padding: 10px;
+  }
+  .title-home {
+    display: box;
+    position: relative;
+    width: 75px;
+  }
+  .small {
+    flex-direction: end;
+    display: inline-block;
+    align-items: right;
+    padding: 0;
+    width: 20.96px;
+    background-color: transparent;
+    border: none;
+  }
+  .nav-bar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .small {
+    display: none;
+  }
+  .nav-bar {
+    display: table;
+    float: left;
+    height: 110px;
+    margin-left: 30px;
+  }
+
+  pj-menu a:first-child {
+    margin-left: 0;
+  }
+}
+/*comandos de utilidade */
+.mar-15 {
+  margin: 15px;
+}
+
+.mar-top-15 {
+  margin-top: 15px;
+}
+
+.mar-bottom-15 {
+  margin-bottom: 15px;
+}
+
+.mar-right-15 {
+  margin-right: 15px;
+}
+
+.mar-left-15 {
+  margin-left: 15px;
+}
