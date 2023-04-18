@@ -4,25 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header class="topbar">
-      <h1 class="title-home pad-15">cadena</h1>
-      <div class="menu">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-sm-12">
-            <button class="small"><img src="img/Menu.svg" alt="menu" /></button>
-          </div>
-        </div>
-      </div>
-      <nav class="nav-bar">
-        <a href="#">Home</a>
-        <a href="">Privacy</a>
-        <a href="">Terms</a>
+    <input type="checkbox" id="dark-mode-input" />
+    <label class="dark-mode-toggler" for="dark-mode-input">
+      <div></div>
+    </label>
+    <header class="nav-container">
+      <img src="../html+css+js/img/logo.svg" alt="" />
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <a href="#"><button class="login">login</button></a>
+        <a href="#"><button class="register">Register</button></a>
       </nav>
     </header>
-    <script src="js/script.js"></script>
   </body>
 </html>
