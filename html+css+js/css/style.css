@@ -24,6 +24,7 @@
   --gray-marcas: #6b7280;
   --gray-copyright: #797b89;
   --gray-text: #797b89;
+  --gray-text-flyer: #383a47;
 
   /*purple*/
   --purple-title: #712fff;
@@ -37,6 +38,7 @@ section .home {
 section .flyer {
   background-color: var(--light-flyer);
 }
+
 li,
 a,
 button {
@@ -53,6 +55,9 @@ header {
   align-items: baseline;
   padding: 30px 10%;
 }
+.nav-container {
+  display: fixed;
+}
 .logo {
   cursor: pointer;
   margin: 0;
@@ -64,10 +69,10 @@ header {
 }
 
 .nav-bar li {
-  display: inline-block;
   padding: 0px 20px;
   margin-top: 28px;
-  align-items: baseline;
+  float: right;
+  align-items: center;
 }
 
 .nav-bar li a {
@@ -91,34 +96,36 @@ button {
   color: var(--light-txt);
 }
 
-.card-container {
-  display: flex;
-  justify-content: end;
-  margin-right: 132px;
-  align-items: baseline;
-}
 .page-1-container {
   width: 265px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  align-items: baseline;
   color: var(--purple-text);
   background: var(--light-content);
+  margin-top: 191px;
+  margin-left: 112px;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 .badage-box {
   width: 265px;
-  float: left, top;
+  align-items: center;
   color: var(--purple-text);
-  background: var(--light-content);
   border-radius: 50%;
 }
 
 .badage {
   display: inline-block;
-  background: var(--light-flyer);
-  border-radius: 5px;
   padding: 10px;
+  height: 20px;
+  width: 55px;
+  background-color: var(--light-flyer);
+}
+
+.badage p {
+  height: 35px;
+  height: 20px;
+  color: var(--purple-title);
 }
 
 .content {
@@ -129,6 +136,41 @@ button {
 
 .card-home {
   float: right;
+}
+
+.text-home-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-right: 2px;
+}
+
+.text-home {
+  font-size: 45px;
+  width: 489px;
+  height: 177px;
+  display: table;
+  margin-bottom: 24px;
+}
+.text-home:first-child {
+  margin-left: 112px;
+}
+
+.p-text-home {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  margin-left: 110px;
+  color: var(--gray-text-flyer);
+  font-size: 20px;
+}
+
+.store {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 180px;
+}
+.store:first-child {
+  margin-left: 112px;
 }
 .footer-nav-container {
   display: flex;
@@ -142,6 +184,9 @@ footer {
   padding: 30px 10%;
 }
 
+.footer-p {
+  font-size: 15px;
+}
 .footer-bar-1 {
   list-style: none;
   justify-content: center;
@@ -174,14 +219,18 @@ footer {
 
 /*classes de utilidade*/
 
-purple-text {
+.purple-text {
   color: var(--purple-text);
 }
 
-gray-text {
+.gray-text {
   color: var(--gray-text);
 }
 
-alling-center {
+.alling-center {
   justify-content: center;
+}
+
+.purple-flyer {
+  color: var(--purple-title-flyer);
 }
