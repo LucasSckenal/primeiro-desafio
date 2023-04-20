@@ -30,17 +30,10 @@
   --purple-text: #6941c6;
 }
 
-section {
+.pg-1 {
   background-color: var(--light-bg);
 }
 
-section #page-2 {
-  background-color: var(--light-txt);
-}
-
-section .flyer {
-  background-color: var(--light-flyer);
-}
 
 li,
 a,
@@ -97,6 +90,39 @@ button {
 
 .log-sig {
   margin-bottom: 82px;
+}
+
+.dark-mode {
+  width: 90px;
+  height: 50px;
+  border: 5px solid #000;
+  border-radius: 60px;
+  position: relative;
+  cursor: pointer;
+  margin: 5px 5px;
+  display: inline-block;
+  justify-items: baseline;
+}
+
+.dark-mode::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+
+.dark-mode.dark {
+  border-color: #fff;
+}
+
+.dark-mode.dark::before {
+  background: #fff;
+  left: 45px;
 }
 
 .login {
@@ -245,9 +271,9 @@ footer {
   grid-row-gap: 52px;
 }
 
-.txt-home-2 {
+.title-home-2 {
   margin-top: 40px;
-  font-size: 30px;
+  font-size: 44px;
 }
 
 .container-pg2 {
@@ -444,6 +470,28 @@ footer {
   height: 90%;
   object-fit: cover;
 
+}
+
+.login.dark,
+body.dark,
+.pg-1.dark,
+.pg-2.dark,
+.pg-3.dark,
+li.dark,
+a.dark,
+.logo.dark {
+  background-color: var(--dark-bg);
+  color: var(--light-txt);
+}
+
+button.dark {
+  background-color: var(--light-txt);
+  color: var(--gray-text-flyer);
+}
+
+.prod.dark,
+.block.dark {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 /*classes de utilidade*/
