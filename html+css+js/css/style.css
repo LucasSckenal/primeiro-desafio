@@ -44,7 +44,8 @@ section .flyer {
 
 li,
 a,
-button {
+button,
+h1 {
   font-family: "Satoshi", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -122,15 +123,16 @@ button {
 }
 
 .badage-box {
-  width: 265px;
+
   align-items: center;
   color: var(--purple-text);
   border-radius: 50%;
 }
 
 .badage {
+  text-align: center;
+  border-radius: 25%;
   display: inline-block;
-  padding: 10px;
   height: 20px;
   width: 55px;
   background-color: var(--light-flyer);
@@ -232,6 +234,7 @@ footer {
 
 .pg-2 {
   background-color: var(--light-flyer);
+  padding-bottom: 96px;
 }
 
 .second-home-container {
@@ -388,21 +391,59 @@ footer {
 
 .pg-3 {
   background-color: var(--light-flyer);
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
-.container-pg-3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
+.pg-3-container {
+  display: flex;
+  justify-content: center;
 }
 
 .box-pg-3 {
-  justify-content: center;
-  align-items: center;
-  width: 1280px;
-
+  width: 100%;
+  max-width: 1360px;
   background-color: var(--light-bg);
+  border-radius: 25px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 671px;
+}
+
+
+.final-title {
+  margin-left: 32px;
+  margin-top: 89px;
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 58px;
+  display: inline-block;
+}
+
+.final-txt {
+  margin-bottom: 122px;
+  margin-left: 32px;
+}
+
+.button-final {
+  margin-bottom: 124px;
+}
+
+.final-card {
+  width: 100%;
+  margin-top: 50px;
+  align-self: flex-end;
+}
+
+.final-img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+
 }
 
 /*classes de utilidade*/
@@ -415,6 +456,11 @@ footer {
   color: var(--gray-text);
 }
 
+
+.gray-text-flyer {
+  color: var(--gray-text-flyer);
+}
+
 .align-center {
   justify-content: center;
 }
@@ -423,6 +469,14 @@ footer {
   color: var(--purple-title-flyer);
 }
 
+.white-text {
+  color: var(--light-txt);
+}
+
 .space-bottom {
   margin-bottom: 22px;
+}
+
+.final-left {
+  margin-left: 32px;
 }
