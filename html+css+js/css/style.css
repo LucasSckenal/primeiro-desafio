@@ -17,9 +17,9 @@
   --light-flyer: #ffffff;
   --light-txt: #ffffff;
   --light-content: #f9f5ff;
-
-  /*gray*/
-  --gray-marcas: #6b7280;
+  --light-p-home: #e7e7e7
+    /*gray*/
+    --gray-marcas: #6b7280;
   --gray-copyright: #797b89;
   --gray-text: #797b89;
   --gray-text-flyer: #383a47;
@@ -42,8 +42,8 @@ h1 {
   font-family: "Satoshi", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: var(--dark-txt);
   text-decoration: none;
+
 }
 
 header {
@@ -57,10 +57,11 @@ header {
   display: fixed;
 }
 
-.logo {
+#logo {
   cursor: pointer;
   margin: 0;
   height: 50px;
+
 }
 
 .nav-bar {
@@ -80,6 +81,14 @@ header {
   font-weight: bold;
 }
 
+h1.dark {
+  color: var(--light-txt);
+}
+
+.a-1 {
+  color: var(--dark-txt);
+}
+
 button {
   padding: 9px 25px;
   background-color: var(--dark-button);
@@ -94,7 +103,7 @@ button {
 
 .dark-mode {
   width: 90px;
-  height: 50px;
+  height: 40px;
   border: 5px solid #000;
   border-radius: 60px;
   position: relative;
@@ -140,7 +149,7 @@ button {
   width: 265px;
   display: flex;
   align-items: baseline;
-  color: var(--purple-text);
+
   background: var(--light-content);
   margin-top: 191px;
   margin-left: 112px;
@@ -150,31 +159,37 @@ button {
 
 .badage-box {
 
-  align-items: center;
+  align-items: flex-start;
   color: var(--purple-text);
   border-radius: 50%;
 }
 
 .badage {
-  text-align: center;
-  border-radius: 25%;
+  margin-left: 5px;
+  border-radius: 30%;
   display: inline-block;
-  height: 20px;
-  width: 55px;
+  height: 25px;
+  width: 40px;
   background-color: var(--light-flyer);
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 40px;
 }
 
 .badage p {
-  height: 35px;
-  height: 20px;
-  color: var(--purple-text);
-  margin-bottom: 25px;
+  height: 30px;
+  width: 35px;
+
 }
 
 .content {
   display: inline-table;
   border-radius: 50px;
   padding: 10px;
+}
+
+.seta {
+  margin-left: 7px;
 }
 
 .card-home {
@@ -338,6 +353,7 @@ footer {
 }
 
 .prod {
+  background-color: transparent;
   display: block;
   align-items: center;
   width: 408.05px;
@@ -430,7 +446,6 @@ footer {
 .box-pg-3 {
   width: 100%;
   max-width: 1360px;
-  background-color: var(--light-bg);
   border-radius: 25px;
   overflow: hidden;
   display: grid;
@@ -467,7 +482,7 @@ footer {
 
 .final-img {
   width: 100%;
-  height: 90%;
+  height: 100%;
   object-fit: cover;
 
 }
@@ -477,10 +492,31 @@ body.dark,
 .pg-1.dark,
 .pg-2.dark,
 .pg-3.dark,
-li.dark,
-a.dark,
 .logo.dark {
   background-color: var(--dark-bg);
+  color: var(--light-txt);
+}
+
+.login.dark,
+body.dark,
+.pg-1.dark,
+.pg-2.dark,
+.pg-3.dark,
+.logo.dark {
+  background-color: var(--dark-bg);
+  color: var(--light-txt);
+}
+
+li.dark,
+h1.dark,
+.a-1.dark,
+.p-text-home.dark,
+.nav-bar.dark {
+  color: var(--light-txt);
+}
+
+.badage.dark {
+  background-color: var(--purple-text);
   color: var(--light-txt);
 }
 
@@ -489,9 +525,8 @@ button.dark {
   color: var(--gray-text-flyer);
 }
 
-.prod.dark,
-.block.dark {
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+.prod.dark {
+  background-color: var(--dark-flyer);
 }
 
 /*classes de utilidade*/
@@ -504,6 +539,9 @@ button.dark {
   color: var(--gray-text);
 }
 
+.dark-text {
+  color: var(--dark-txt);
+}
 
 .gray-text-flyer {
   color: var(--gray-text-flyer);
@@ -527,4 +565,8 @@ button.dark {
 
 .final-left {
   margin-left: 32px;
+}
+
+.light-bg {
+  background-color: var(--light-bg);
 }
