@@ -152,6 +152,10 @@ button {
   margin-right: 112px;
 }
 
+.menu-mobile {
+  display: none;
+}
+
 .pg-1-1 {
   padding-top: 120px;
 }
@@ -485,6 +489,7 @@ footer {
 
 .button-final {
   margin-bottom: 124px;
+  padding: 9px 25px;
 }
 
 .final-card {
@@ -543,6 +548,15 @@ button.dark {
 .register.dark {
   background-color: var(--light-bg);
   color: var(--gray-text-flyer);
+}
+
+.register.dark:hover {
+  background-color: var(--purple-text);
+  color: var(--light-txt);
+}
+
+.login.dark:hover {
+  color: var(--purple-text);
 }
 
 .prod.dark {
