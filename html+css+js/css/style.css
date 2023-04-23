@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* definição das cores */
 :root {
   /*black*/
   --dark-bg: #060809;
@@ -30,6 +31,7 @@
   --purple-text: #6941c6;
 }
 
+/* começo da estilização da pagina 1*/
 body {
   margin: 0;
   padding: 0;
@@ -41,17 +43,23 @@ body {
   top: 0;
 }
 
-
+/* formatação das variáveis de texto*/
 li,
 a,
 button,
-h1 {
+h1,
+h2 {
   font-family: "Satoshi", sans-serif;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
 }
 
+p {
+  font-family: "Satoshi", sans-serif;
+}
+
+/* top bar */
 header {
   display: flex;
   justify-content: space-between;
@@ -71,7 +79,6 @@ header {
 
 }
 
-
 .nav-bar {
   list-style: none;
   justify-content: start;
@@ -79,6 +86,7 @@ header {
 
 
 .nav-bar li {
+  display: inline;
   padding: 0px 20px;
   margin-top: 8px;
   float: right;
@@ -95,10 +103,12 @@ h1.dark {
   color: var(--light-txt);
 }
 
+/* coloração da a da top-bar */
 .a-1 {
   color: var(--dark-txt);
 }
 
+/* definição padrão dos botoes */
 button {
 
   background-color: var(--dark-button);
@@ -108,7 +118,7 @@ button {
 }
 
 
-
+/* Botão para a troca de cores */
 .btn-dark-mode {
   width: 45px;
   height: 45px;
@@ -136,6 +146,11 @@ button {
   display: inline-block;
 }
 
+.btn-dark-mode:hover {
+  transform: scale(1.1);
+}
+
+/* configuração para login e sign up  */
 .log-sig {
   padding: 9px 25px;
 }
@@ -150,6 +165,23 @@ button {
 .register {
   color: var(--light-txt);
   margin-right: 112px;
+}
+
+.register:hover,
+.button-final:hover {
+  background-color: var(--purple-text);
+  color: var(--light-txt);
+}
+
+.login:hover,
+.Home:hover,
+.Terms:hover,
+.Privacy:hover {
+  color: var(--purple-text);
+}
+
+.login:hover {
+  color: var(--purple-text);
 }
 
 .menu-mobile {
@@ -245,12 +277,13 @@ button {
   display: inline-block;
   margin-right: 15px;
   margin-bottom: 280px;
+  cursor: pointer;
 }
 
 .store:first-child {
   margin-left: 112px;
 }
-
+/* formatação dos footers */
 .footer-nav-container {
   display: flex;
   justify-content: space-between;
@@ -266,7 +299,11 @@ footer {
 }
 
 .footer-p {
+  text-align: center;
+  font-weight: 500;
   font-size: 15px;
+  line-height: 27px;
+  margin-right: 100px;
 }
 
 .footer-bar-1 {
@@ -289,7 +326,7 @@ footer {
   size: 15px;
   color: var(--gray-text);
 }
-
+/* formatação da pagina 2 */
 .pg-2 {
   background-color: var(--light-flyer);
   padding-bottom: 96px;
@@ -447,7 +484,7 @@ footer {
   display: inline-block;
   padding: 0px 20px;
 }
-
+/* formatação da pagina final */
 .pg-3 {
   background-color: var(--light-flyer);
   padding-top: 96px;
@@ -480,6 +517,7 @@ footer {
   font-size: 43px;
   line-height: 58px;
   display: inline-block;
+
 }
 
 .final-txt {
@@ -489,7 +527,7 @@ footer {
 
 .button-final {
   margin-bottom: 124px;
-  padding: 9px 25px;
+  padding: 18px 25px;
 }
 
 .final-card {
@@ -505,28 +543,25 @@ footer {
 
 }
 
-
-
-
+/* estilização para o dark-mode */
 .login.dark,
 body.dark,
 .pg-1.dark,
 .pg-2.dark,
 .pg-3.dark,
-.logo.dark,
 header.dark,
-.pg-1-1.dark {
+.pg-1-1.dark,
+.Home.dark,
+.Terms.dark,
+.Privacy.dark {
   background-color: var(--dark-bg);
   color: var(--light-txt);
+  transition: 0.5s ease-in-out;
 }
 
 .a-1.dark,
-.p-text-home.dark {
-  color: var(--light-txt);
-}
-
-li.dark,
-h1.dark {
+.p-text-home.dark,
+.final-title.dark {
   color: var(--light-txt);
 }
 
@@ -545,21 +580,31 @@ button.dark {
   border: 2px solid var(--gray-text-flyer);
 }
 
-.register.dark {
+.register.dark,
+.button-final.dark {
   background-color: var(--light-bg);
-  color: var(--gray-text-flyer);
+  color: var(--dark-txt);
 }
 
-.register.dark:hover {
+.register.dark:hover,
+.button-final.dark:hover {
   background-color: var(--purple-text);
   color: var(--light-txt);
 }
 
-.login.dark:hover {
+.login.dark:hover,
+.Home.dark:hover,
+.Terms.dark:hover,
+.Privacy.dark:hover {
   color: var(--purple-text);
 }
 
-.prod.dark {
+.block.dark,
+.pr-1.dark,
+.pr-2.dark,
+.pr-3.dark,
+.pr-4.dark,
+.box-pg-3.dark {
   background-color: var(--dark-flyer);
 }
 
