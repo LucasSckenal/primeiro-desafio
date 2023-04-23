@@ -1,2 +1,2 @@
 # primeiro-desafio
-Avalie a primeira pasta Pois a pAsta Responsivel ainda esta em desenvolvmento
+Avalie a primeira pasta pois a pasta Responsivel ainda esta em desenvolvmento
