@@ -1,0 +1,30 @@
+
+
+@media screen and (min-width: 320px) {
+ #logo {
+    cursor: pointer;
+    margin-left: 20px;
+
+  }
+
+  .nav-bar li {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .badage-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 10px 4px 4px;
+    gap: 12px;
+
+    width: 265px;
+    height: 32px;
+  }
+
+
+}
