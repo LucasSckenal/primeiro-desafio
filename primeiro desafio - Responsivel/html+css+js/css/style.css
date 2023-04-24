@@ -1172,6 +1172,8 @@
     margin-right: 80px;
     padding-bottom: 60px;
     float: right;
+    position: relative;
+    left: 871.97px;
   }
 
   .title-page-2 {
@@ -1211,10 +1213,13 @@
     position: absolute;
     width: 1280px;
     height: 660.3px;
+    left: -30.27px;
   }
 
-  .prod {
 
+
+  .prod {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
